@@ -204,5 +204,7 @@
       }
     }
   },
-  "defaultProject": "my-ui"
+  "cli": {
+    "analytics": false
+  }
 }

@@ -139,16 +139,6 @@ export class SentryErrorHandler implements ErrorHandler {
         { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true },
         { provide: ErrorHandler, useClass: SentryErrorHandler }
     ],
-    bootstrap: [AppComponent],
-    entryComponents: [
-        TestPluginComponent,
-        GalaxyPluginComponent,
-        DataAccessPluginComponent,
-        PopulateHomePluginComponent,
-        GenostackPluginComponent,
-        QuotasPluginComponent,
-        GomailPluginComponent,
-        AdminQuotaExamplePluginComponent
-    ]
+    bootstrap: [AppComponent]
 })
 export class AppModule {}
