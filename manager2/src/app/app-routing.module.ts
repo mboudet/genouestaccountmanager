@@ -159,7 +159,8 @@ const routes: Routes = [
     imports: [
         RouterModule.forRoot(
             routes,
-            { enableTracing: false, relativeLinkResolution: 'legacy' } // <-- debugging purposes only
+            { enableTracing: false } // <-- debugging purposes only
+ // <-- debugging purposes only
  // <-- debugging purposes only
         )
     ],
