@@ -455,10 +455,11 @@ export class UserComponent implements OnInit {
 
                 // IE doesn't allow using a blob object directly as link href
                 // instead it is necessary to use msSaveOrOpenBlob
-                if (window.navigator && window.navigator.msSaveOrOpenBlob) {
-                    window.navigator.msSaveOrOpenBlob(blob);
-                    return;
-                }
+                // MB: Deprecated, IE is obsolete
+                //if (window.navigator && window.navigator.msSaveOrOpenBlob) {
+                //    window.navigator.msSaveOrOpenBlob(blob);
+                //    return;
+                //}
 
                 // For other browsers:
                 // Create a link pointing to the ObjectURL containing the blob.
